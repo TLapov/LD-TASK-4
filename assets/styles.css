@@ -1,0 +1,135 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.section {
+   background-color: #E3CFCF;
+   opacity: 0;
+   transform: translateX(-1200px);
+   transition: all 0.6s ease-in-out;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+.section__container {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.section__image {
+    height: 300px;
+    width: 100%;
+}
+
+.section__image img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.section__text {
+    height: calc(100% - 300px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.section__text__wrapper {
+    padding-inline: 1rem;
+    height: 339px;
+    margin-inline: auto;
+    max-width: 512px;
+}
+
+.section__title {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 275;
+    line-height: 1.95rem;
+    margin: 0;
+}
+
+.section__description {
+    text-align: center;
+    font-weight: 300;
+    margin: 0;
+    line-height: 1.3rem;
+    margin-top: 1.5rem;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-150px);
+    transition: all 0.4s ease-in-out;
+}
+
+.section__description.expanded {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 250px;
+}
+
+.section__button {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.section__button button {
+    height: 48px;
+    width: 110px;
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+    .section__container {
+       display: flex;
+       align-items: center;
+    }
+
+    .section__image {
+        flex: 1;
+        height: 100vh;
+    }
+
+    .section__text {
+        flex: 1;
+        height: 337px;
+        width: 50%;
+        
+    }
+
+    .section__text__wrapper {
+        height: 337px;
+    }
+
+    .section__title {
+        font-size: 2rem;
+        line-height: 2.6rem;
+    }
+
+    .section__description {
+        font-size: 1.125rem;
+        line-height: 1.4625rem;
+    }
+    
+    .section__button button {
+        height: 52px;
+        width: 170px;
+    }
+
+}
+
+@media (min-width: 1100px) {
+    .section__text__wrapper {
+        width: 512px;
+        padding-inline: 0;
+    }
+}
