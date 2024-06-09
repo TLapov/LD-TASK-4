@@ -1,23 +1,21 @@
-<div style="height: 100vh;"></div>
-    <section class="section">
-        <div class="section__container">
-            <div class="section__image">
-                <img src="{{ 'person.png' | asset_url }}" alt="Model">
-            </div>
-            <div class="section__text">
-                <div class="section__text__wrapper">
-                    <h1 class="section__title">{{ section.settings.title }}</h1>
-                    <p class="section__description">
-                        {{ section.settings.description }}
-                    </p>
-                    <div class="section__button">
-                        <button type="button">{{ section.settings.button_text }}</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<div style="height: 100vh;"></div>
+  <section class="section">
+      <div class="section__container">
+          <div class="section__image">
+              <img src="{{ 'person.png' | asset_url }}" alt="Model">
+          </div>
+          <div class="section__text">
+              <div class="section__text__wrapper">
+                  <h1 class="section__title">{{ section.settings.title }}</h1>
+                  <p class="section__description">
+                      {{ section.settings.description }}
+                  </p>
+                  <div class="section__button">
+                      <button type="button">{{ section.settings.button_text }}</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
 {% schema %}
 {

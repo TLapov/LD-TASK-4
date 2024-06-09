@@ -1,1 +1,24 @@
-{"sections":{"image-text-section":{"type":"image-text-section","settings":{}}},"order":["image-text-section"]}
+{
+    "sections": {
+      "image-text-section": {
+        "type": "image-text-section",
+        "settings": {
+        }
+      },
+      "spacer-1": {
+        "type": "spacer",
+        "settings": {
+        }
+      },
+      "spacer-2": {
+        "type": "spacer",
+        "settings": {
+        }
+      }
+    },
+    "order": [
+      "spacer-1",
+      "image-text-section",
+      "spacer-2"
+    ]
+}
